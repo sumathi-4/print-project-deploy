@@ -1,11 +1,11 @@
 # 🖨️ Print Module
 
-## 📌 Description
+##  Description
 A simple full-stack print module system where users can upload a PDF, choose print options, calculate price, and place orders.
 
 ---
 
-## 🚀 Features
+##  Features
 - Upload PDF file
 - Auto page count (pdf.js)
 - Select print type (B/W or Color)
@@ -16,14 +16,14 @@ A simple full-stack print module system where users can upload a PDF, choose pri
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - HTML, CSS, JavaScript
 - Node.js, Express
 - pdf.js
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 ### Backend
 cd backend  
@@ -35,12 +35,12 @@ Open frontend/index.html
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ![Upload Page](screenshots/upload.png)
 ![Orders Page](screenshots/orders.png)
 
 ---
 
-## 👩‍💻 Author
+##  Author
 Sumati
