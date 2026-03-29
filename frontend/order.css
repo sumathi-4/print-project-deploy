@@ -1,0 +1,54 @@
+
+.orders-card {
+  width: 100%;
+}
+
+.orders-card h2 {
+  margin-bottom: 1.5rem;
+  color: #667eea;
+}
+
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.orders-table thead {
+  background: rgb(209, 133, 145);
+  color: white;
+}
+
+.orders-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.orders-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.orders-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .orders-table th,
+  .orders-table td {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print Module</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>🖨️ Print Module</h1>
+      
+    </div>
+    <nav>
+      <a href="index.html" class="active">New Order</a>
+      <a href="orders.html">View Orders</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+    <div class="card order-card">
+      <h2>Upload PDF</h2>
+      <div class="upload-section">
+    <label class="upload-label">
+          <input type="file" id="file" accept="application/pdf">
+          <div class="upload-icon">📄</div>
+          <p>Click to upload PDF</p>
+          <small>PDF files only (Max 10MB)</small>
+        </label>
+        
+        <div class="file-info">
+          <p>📁 File Name: <span id="fileName">No file selected</span></p>
+          <p>📄 Pages: <span id="pageCount">0</span></p>
+        </div>
+      </div>
+      <div class="options-section">
+        <div class="print-type">
+          <h3>Print Type</h3>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="type" value="bw" checked>
+              <span>⚫ Black & White</span>
+              <small>₹2/page</small>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="type" value="color">
+              <span>🎨 Color</span>
+              <small>₹5/page</small>
+            </label>
+          </div>
+        </div>
+        <div class="copies-section">
+          <h3>Number of Copies</h3>
+          <div class="counter">
+            <button type="button" id="decreaseCopies">-</button>
+            <input type="number" id="copies" value="1" min="1" max="100">
+            <button type="button" id="increaseCopies">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="price-summary">
+        <h3>Total Amount</h3>
+        <div class="price-details">
+          <p>Pages: <span id="displayPages">0</span></p>
+          <p>Price per page: <span id="pricePerPage">₹2</span></p>
+          <p>Copies: <span id="displayCopies">1</span></p>
+          <div class="total-price">
+            <strong>Total: ₹<span id="price">0</span></strong>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="action-buttons">
+        <button id="orderBtn" class="btn-primary">Place Order</button>
+        <button id="resetBtn" class="btn-secondary">Reset Orders</button>
+      </div>
+    </div>
+    
+    
+    <div class="card info-card">
+      <h3>💡 Quick Info</h3>
+      <ul>
+        <li>✓ Black & White: ₹2 per page</li>
+        <li>✓ Color Print: ₹5 per page</li>
+        <li>✓ Minimum 1 copy, Maximum 100</li>
+        <li>✓ File size limit: 10MB</li>
+        <li>✓ Supported: PDF files only</li>
+      </ul>
+    </div>
+  </div>
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

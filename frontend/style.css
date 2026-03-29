@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+header {
+  background: rgb(209, 133, 145);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.logo h1 {
+  font-size: 1.8rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+nav a:hover, nav a.active {
+  background: rgba(255,255,255,0.2);
+}
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.card h2, .card h3 {
+  margin-bottom: 1rem;
+  color: #667eea;
+}
+.upload-section {
+  margin-bottom: 1.5rem;
+}
+.upload-label {
+  display: block;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+.upload-label:hover {
+  border-color: #667eea;
+}
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.upload-label input {
+  display: none;
+}
+.file-info {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+.file-info p {
+  margin: 0.3rem 0;
+}
+.options-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.radio-label {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.radio-label:hover {
+  border-color: #667eea;
+  background: #f8f9fa;
+}
+.radio-label input {
+  margin-right: 0.5rem;
+}
+.radio-label span {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.radio-label small {
+  display: block;
+  color: #666;
+  font-size: 0.8rem;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.counter button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ddd;
+  background: #f8f9fa;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+.counter button:hover {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+.counter input {
+  width: 80px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.price-summary {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.price-details {
+  margin-top: 0.5rem;
+}
+.price-details p {
+  margin: 0.5rem 0;
+}
+.total-price {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 2px solid #dee2e6;
+  font-size: 1.3rem;
+}
+.total-price strong {
+  color: #667eea;
+  font-size: 1.5rem;
+}
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.btn-primary, .btn-secondary {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-primary {
+  background: rgb(209, 133, 145);
+  color: white;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+.btn-secondary:hover {
+  background: #5a6268;
+}
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+.info-card li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+}
+.info-card li:last-child {
+  border-bottom: none;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .options-section {
+    grid-template-columns: 1fr;
+  }
+  
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+}
