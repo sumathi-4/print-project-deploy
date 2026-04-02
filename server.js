@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use(express.static(path.join(__dirname, "../frontend")));
+app.use(express.static(path.join(__dirname)));
 
 
 const ordersFile = path.join(__dirname, "orders.json");
@@ -99,11 +99,10 @@ app.get("/orders", (req, res) => {
   res.json(orders);
 });
 
-
-
-
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
   console.log(`Orders will be saved to: ${ordersFile}`);
 });
+
+
