@@ -160,7 +160,7 @@ orderBtn.addEventListener("click", () => {
     price: totalPrice.textContent
   };
   
-  fetch("http://localhost:3000/order", {
+  fetch("/order", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

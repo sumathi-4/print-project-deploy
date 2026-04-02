@@ -1,6 +1,6 @@
 const table = document.getElementById("ordersTable");
 
-fetch("http://localhost:3000/orders")
+fetch("/orders")
   .then(res => res.json())
 
   .then(data => {
